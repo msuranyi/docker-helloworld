@@ -2,7 +2,7 @@ name: Release notification
 
 on:
   release:
-    types: [published, released]
+    types: [released]
 
 jobs:
   send-slack-message:
@@ -13,3 +13,4 @@ jobs:
           echo "Github release ref: ${{ github.ref_name }}"
           echo "Event name: ${{ github.event_name }}"
           echo "Event type: ${{ github.event.action }}"
+          echo "Release URL: ${{ github.server_url }}/${{ github.repository }}/releases/tag/${{ github.ref_name }}"
