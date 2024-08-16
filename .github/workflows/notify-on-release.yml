@@ -9,11 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send slack message
-        uses: slackapi/slack-github-action@v1.26.0
-        with:
-          payload: |
-            {
-              "text": "New release has been released"
-            }
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: echo "Github released published or released"
