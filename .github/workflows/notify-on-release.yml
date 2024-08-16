@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send slack message
-        run: echo "Github release ${{ GITHUB_REF }} published or released"
+        run: echo "Github release ${{ github.GITHUB_REF }} published or released"
