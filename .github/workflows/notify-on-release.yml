@@ -1,4 +1,4 @@
-name: Release notification
+name: Release notification logger
 
 on:
   release:
