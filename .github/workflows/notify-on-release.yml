@@ -11,5 +11,5 @@ jobs:
       - name: Send slack message
         run: |
           echo "Github release ref: ${{ github.ref_name }}"
-          echo "Event: ${{ github.event }}"
           echo "Event name: ${{ github.event_name }}"
+          echo "Event type: ${{ github.event.type }}"
