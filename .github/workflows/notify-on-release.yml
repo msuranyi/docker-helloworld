@@ -1,4 +1,4 @@
-name: Release notification logger
+name: Release notification logger workflow
 
 on:
   release:
